@@ -1,0 +1,86 @@
+.footer {
+  position: relative;
+  background-color: #333;
+  .heading {
+    font-size: 1.4em;
+    color: $base;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 1em;
+  }
+
+  h2,h2,h3,h4,h5,h6 {
+    color: $base;
+    margin-top: 0;
+    @extend .heading;
+  }
+
+
+
+  a {
+    color: #fff;
+    @extend .link-underline
+  }
+  padding: 2em;
+  padding-bottom: 4em;
+
+
+  .go-to-top {
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+
+    a {
+      color: #fff;
+      padding: .4em .7em;
+      &:hover {
+
+      }
+    }
+    border :1px solid #fff;
+    padding: .4em .7em;
+    cursor: pointer;
+
+    &:hover {
+    }
+    transition: .1s all;
+  }
+
+
+  form {
+    * {
+      display: block;
+      width: 100%;
+      margin-top: 1em;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    label {
+      color: #fff;
+    }
+    input {
+      padding: .8em;
+      border-radius: 3px;
+      border: 1px transparent;
+
+      &:focus {
+        border-color: $secondary;
+        outline: none;
+      }
+    }
+
+    button {
+      background: $secondary;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      padding: 10px 5px;
+      font-size: 1.5em;
+      border-radius: 3px;
+      cursor: pointer;
+
+    }
+  }
+}

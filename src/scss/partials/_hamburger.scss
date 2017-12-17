@@ -1,0 +1,25 @@
+
+#mobileNavToggle {
+  * {
+    transition: all .3s;
+  }
+  &.toggled {
+    .hamburger-top-line {
+      opacity: 0;
+    }
+    .hamburger-middle-line {
+      transform: rotate(45deg);
+      transform-origin: center;
+    }
+    .hamburger-hidden-middle-line {
+      transform: rotate(-45deg);
+      transform-origin: center;
+    }
+
+    .hamburger-bottom-line {
+      opacity: 0;
+    }
+
+
+  }
+}

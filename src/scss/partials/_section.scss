@@ -1,0 +1,73 @@
+section {
+  padding-top: 1em;
+  >h2 {
+    text-align: center;
+    font-size: 5vmin;
+    + p {
+      text-align: center;
+
+      font-size: 3vmin;
+    }
+  }
+
+  + section {
+    padding-top: 2em;
+
+    margin-top: 4em;
+    @media only screen and (max-width:768px) {
+      margin-top: 1em;
+    }
+  }
+
+
+
+  &.parallax-bg {
+
+
+    height: 450px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media only screen and (max-width:768px) {
+      height: 350px;
+    }
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    // background-image: url('paste background image URL here');
+    background-size: cover;
+
+    .parallax-bg__heading {
+      text-align: center;
+      color: #fff;
+      font-size: 5vmin;
+    }
+
+    .parallax-bg__content {
+      border: 1px solid $base;
+      background-color: rgba(0,0,0,.15);
+      padding: 2em;
+      color: #fff;
+
+      width: 60em;
+      max-width: calc(100% - 2em);
+      //margin: auto;
+      font-size: 1.2em;
+      font-weight: bold;
+
+    }
+    &__content {
+      padding: 1em;
+      border: 1px solid $base;
+
+      color: #fff;
+      h2,h3,h4,h5,h6 {
+        text-align: center;
+
+      }
+    }
+
+  }
+}

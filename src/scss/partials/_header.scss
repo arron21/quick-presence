@@ -1,0 +1,42 @@
+.header {
+
+  background:rgba(0,0,0,.05);
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav--mobile {
+    //display: none;
+    //position: fixed;
+    //background: rgba(0,0,0,.15);
+    //height: 100vh;
+    //width: 100vw;
+  }
+}
+.logo {
+  a {
+    display: block;
+  }
+  img {
+    display: block;
+  }
+  margin: 1em;
+}
+
+.mobile-nav-toggle {
+  margin: 0 1em;
+  display: none;
+  cursor: pointer;
+  // Moving this to Javascript so it is easier to control
+  //@media screen and (max-width: 500px) {
+  //  display: block;
+  //}
+}

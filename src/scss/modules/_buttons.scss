@@ -1,0 +1,10 @@
+$border-radius: 3px;
+
+.green-gradient {
+  background: linear-gradient(90deg, #a0cea7, #97dbcc);
+}
+
+button {
+  padding: 5px 15px;
+  border-radius: $border-radius;
+}

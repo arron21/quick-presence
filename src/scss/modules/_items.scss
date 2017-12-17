@@ -1,0 +1,47 @@
+.items {
+  @extend .container;
+
+  display: flex;
+  flex-wrap: wrap;
+  @media only screen and (max-width:768px) {
+    flex-direction: column;
+  }
+
+  img {
+    margin: auto;
+    display: block;
+    @media only screen
+    and (orientation : portrait) {
+      max-height: 300px;
+    }
+  }
+
+  &__item {
+    margin: 1em;
+
+    @media only screen and (min-width:768px) {
+      flex-direction: column;
+      &:first-of-type {
+        margin-left: 0;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    &--padding {
+      padding: 0 1em;
+    }
+
+    &__header,&__text {
+      padding: 1em;
+      margin: 10px;
+      text-align: center;
+    }
+
+
+    flex: 1;
+    &:hover {
+      //background: darken($base, 5%);
+    }
+  }
+}
